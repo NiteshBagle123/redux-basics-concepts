@@ -1,7 +1,6 @@
 import { 
     add, subtract, increment, decrement, storeResult, deleteResult
 } from '../../store/actions/index';
-// import * as actionTypes from '../../store/actions/actions';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import CounterControl from '../../components/CounterControl/CounterControl';
@@ -38,7 +37,7 @@ class Counter extends Component {
                 <CounterControl label="Add 5" clicked={this.props.onAdd5Counter}  />
                 <CounterControl label="Subtract 5" clicked={this.props.onSubtract5Counter}  />
                 <hr />
-                <button onClick={() => this.props.onStoreResult(this.props.ctr)}>Store results</button>
+                <button onClick={() => this.props.onStoreResult(this.props.storedResults)}>Store results</button>
                 <ul>
                     {this.props.storedResults.map(strResult => (
                         <li

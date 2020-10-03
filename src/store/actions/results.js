@@ -11,10 +11,6 @@ export const storeResult = value => {
             dispatch(saveResult(value));
         }, 2000);
     }
-    // return {
-    //     type: STORE_RESULT,
-    //     ...value
-    // }
 }
 
 export const deleteResult = id => {
