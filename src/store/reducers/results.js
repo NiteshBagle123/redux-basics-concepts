@@ -18,9 +18,7 @@ const resultsReducer = (state = initialState, action) => {
         }
     }
 
-    return { 
-        counter: action.result
-    };
+    return state;
 };
 
 export default resultsReducer;
